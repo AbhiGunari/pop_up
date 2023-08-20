@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop-up</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <div id="modelbox">
+       <img src="" alt="image not found" width="100%" id="image">
+       <div id="offer">
+        <h2>Get 20% off </h2>
+        <h3 id="offer_text"> </h3>
+        <br><br>
+        <h3 id="reg">Register to avail the offer</h3>
+        <form action="register.php" method="post">
+            <input type="tel" placeholder="Enter your mobile number" name="mobile" id="mobile" maxlength="10">
+             <button type="submit" id="submit" onclick="openpop()">Register</button>
+        </form>
+       </div>
+       <img src="cancel2.png" alt="image not found" id="cancel" onclick="closeform()">
+    </div>
+    
+</body>
+</html>
