@@ -2,7 +2,7 @@
 $server = "localhost";
 $user = "root";
 $password = "";
-$database = "popup";
+$database = "popup2";
 $conn = mysqli_connect($server, $user, $password, $database);
 
 if (!$conn) {
