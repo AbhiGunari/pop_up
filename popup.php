@@ -1,8 +1,8 @@
 <?php
-$server = "localhost";
-$user = "root";
-$password = "";
-$database = "popup2.sql";
+$server = "mysql://uac11tf17fwufojr:ILro7MHEkdNQVu7eytO9@brqvy6siwk08cb9phmsq-mysql.services.clever-cloud.com:3306/brqvy6siwk08cb9phmsq";
+$user = "uac11tf17fwufojr";
+$password = "ILro7MHEkdNQVu7eytO9";
+$database = "brqvy6siwk08cb9phmsq";
 $conn = mysqli_connect($server, $user, $password, $database);
 
 if (!$conn) {
