@@ -1,5 +1,5 @@
 <?php
-$server = "mysql://uac11tf17fwufojr:ILro7MHEkdNQVu7eytO9@brqvy6siwk08cb9phmsq-mysql.services.clever-cloud.com:3306/brqvy6siwk08cb9phmsq";
+$server = "brqvy6siwk08cb9phmsq-mysql.services.clever-cloud.com";
 $user = "uac11tf17fwufojr";
 $password = "ILro7MHEkdNQVu7eytO9";
 $database = "brqvy6siwk08cb9phmsq";
@@ -10,7 +10,7 @@ if (!$conn) {
 }
 
 $currentDate = date("Y-m-d");
-$query = "SELECT offer_text,url FROM `popup2`.`offers` WHERE date =?";
+$query = "SELECT offer_text,url FROM `brqvy6siwk08cb9phmsq`.`offers` WHERE date =?";
 $stmt = mysqli_prepare($conn, $query);
 mysqli_stmt_bind_param($stmt, "s", $currentDate);
 mysqli_stmt_execute($stmt);
